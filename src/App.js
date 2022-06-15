@@ -29,7 +29,7 @@ function App() {
     movie()
   },[])
 
-  const API = "https://imdb-api.com/API/Youtube/k_dekqhm6t/8hP9D6kZseM"
+  const API = "https://api.themoviedb.org/3/discover/movie?api_key=f56b21c32cdf3221d2b0da04638aa8da&language=en-US&sort_by=popularity.desc&include_adult=true&include_video=true&page=10&with_watch_monetization_types=free&page=1"
   const movie = ()=>{
       axios.get(API).then((res)=>{
         console.log(res);
